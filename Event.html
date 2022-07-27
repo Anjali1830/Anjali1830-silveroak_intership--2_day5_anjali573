@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script type="text/javascript">
+         function demoonclick()
+        {
+            alert("on click")
+        }
+        function demoonDblclick()
+        {
+            alert("on Double click")
+        }
+         function demoonFocus()
+         {
+            document.getElementById("txtFoucus").style.backgroundColor="Red";
+         }
+         function demoonblur()
+         {
+            document.getElementById("txtblur").style.backgroundColor="Red";
+         }
+         function demoonkeypress()
+         {
+            alert("keypress Done")
+         }
+         function demoonkeyup()
+         {
+            alert("keyup Done")
+         }
+        
+   </script>
+</head>
+<body>
+    <button onclick="demoonclick()">click Event</button>
+    <hr/>
+    <button ondblclick="demoonDbclick()">Double click Event</button>
+    <hr/>
+    <b>Focus;</b><br/>
+    <input type="text" placeholder="Focus Event Demo" id="txtFocus" onfocus="demoonfocus()"/>
+    <hr/>
+    <b>Blur;</b><br/>
+    <input type="text" placeholder="Blur Event Demo" id="txtBlur" onblur="demoonBlur()"/>
+    <hr/>
+    <b>Keypress;</b><br/>
+    <input type="text" placeholder="keypress event Demo" onkeypress="demoonkeypress()"/>
+    <hr/>
+    <b>Keyup;</b><br/>
+    <input type="text" placeholder="keyup event Demo" onkeyup="demoonkeyup()"/>
+    <hr/>
+
+</body>
+</html>
